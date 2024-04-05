@@ -1,7 +1,11 @@
-ul.navbar-nav {list-style-type: none;}
-ul.li.nav-item {display: inline-block;}
 #header1{
   color: brown;
+  font-size: xx-large;
+  font-weight: bolder;
+  font-display: flex;
+}
+#header2{
+  color: blueviolet;
   font-size: xx-large;
   font-weight: bolder;
   font-display: flex;

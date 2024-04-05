@@ -1,4 +1,5 @@
 import './App.css';
+import Features from './Components/Features';
 import Home from './Components/Home';
 import Nav from './Components/Nav';
 
@@ -6,12 +7,10 @@ function App() {
   
   return(
     <>
-      <div>
-        <Nav/>
-      </div>
-      <div>
-        <Home/>
-      </div>
+        <Nav title="Word Counting"/>
+        <br/>
+        <Home place="Please enter..."/>
+        <br />
     </>
     
   )

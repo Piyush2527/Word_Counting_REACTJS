@@ -5,7 +5,7 @@ function Nav(props) {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/nav">
+          <a className="navbar-brand" href="">
             {props.title}
           </a>
           <button
@@ -27,7 +27,7 @@ function Nav(props) {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/features">
+                <a className="nav-link" href="/feature">
                   Features
                 </a>
               </li>

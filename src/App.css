@@ -6,7 +6,29 @@
 }
 #header2{
   color: blueviolet;
+  text-align: center;
   font-size: xx-large;
   font-weight: bolder;
   font-display: flex;
+}
+.uc,.lc,.re,.cw{
+  margin: 2px;
+}
+.uc:hover{
+  background-color: rgb(23, 94, 59);
+}
+.lc:hover{
+  background-color: rgb(23, 94, 59);
+}
+.re:hover{
+  background-color: rgb(23, 94, 59);
+}
+.cw:hover{
+  background-color: rgb(23, 94, 59);
+}
+.uc:active,.lc:active,.re:active,.cw:active{
+  background-color: rgb(6, 11, 142);
+}
+.uc:focus,.lc:focus,.re:focus,.cw:active{
+  background-color: rgb(122, 129, 0);
 }

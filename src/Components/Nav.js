@@ -32,8 +32,8 @@ function Nav(props) {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/pricing">
-                  Pricing
+                <a className="nav-link" href="/resume">
+                  Resume
                 </a>
               </li>
             </ul>

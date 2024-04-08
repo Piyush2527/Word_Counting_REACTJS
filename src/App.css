@@ -32,3 +32,14 @@
 .uc:focus,.lc:focus,.re:focus,.cw:active{
   background-color: rgb(122, 129, 0);
 }
+footer {
+  display: grid;
+  position: fixed;
+  padding: 10px 10px 10px 10px;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  justify-content: space-around;
+  background-color: #333;
+  color: #fff;
+}

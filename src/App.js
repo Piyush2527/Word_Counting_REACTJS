@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import Nav from "./Components/Nav";
 import Features from "./Components/Features";
+import Download from "./Components/Download";
+import Resume from "./Components/Resume";
 
 function App() {
   return (
@@ -16,9 +18,13 @@ function App() {
           <Route exact path="/feature">
             <Features place="Plese enter text to change it into upper case,lower case or reset box text"/>
           </Route>
+          <Route exact path="/resume">
+            <Resume/>
+          </Route>
           
         </Switch>
       </Router>
+      <Download/>
     </>
   );
 }

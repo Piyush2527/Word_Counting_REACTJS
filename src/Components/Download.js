@@ -11,8 +11,6 @@ function Download() {
             <a href="/PIYUSH_resume.pdf" download className="btn btn-primary">
               Download
             </a>
-            <br />
-            click to download
           </div>
         </div>
 

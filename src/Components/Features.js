@@ -21,11 +21,16 @@ function Features(props) {
     setVal("");
   };
   const COUNTS =()=>{
-    let l=val
-    var regex = /[a-zA-Z0-9]/g;
-    console.log(l.match(regex).length);
-    l=l.match(regex).length
-    alert("Your words count is: "+ l)
+    if(val.length>1){
+      let l=val
+      var regex = /[a-zA-Z0-9]/g;
+      console.log(l.match(regex).length);
+      l=l.match(regex).length
+      alert("Your words count is: "+ l)
+    }else{
+      alert("Your text box is empty!")
+    }
+    
   }
 
   return (

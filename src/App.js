@@ -13,7 +13,7 @@ function App() {
         <Nav title="Fun with words" />
         <Switch>
           <Route exact path="/home">
-            <Home fplace="first name" lplace="last name" />
+            <Home fplace="First" lplace="Last" eplace="Email"/>
           </Route>
           <Route exact path="/feature">
             <Features place="Plese enter text to change it into upper case,lower case or reset box text"/>
@@ -24,7 +24,6 @@ function App() {
           
         </Switch>
       </Router>
-      <Download/>
     </>
   );
 }

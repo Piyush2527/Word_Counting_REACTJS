@@ -5,6 +5,7 @@
   font-display: flex;
 }
 #header2{
+  background-color: rgba(2, 2, 35, 0.76);  
   color: blueviolet;
   text-align: center;
   font-size: xx-large;
@@ -58,4 +59,16 @@ ul{
 .EXP{
   color: black;
   background-color: rgba(112, 112, 253, 0.76);
+}
+.profile{
+  color: black;
+  background-color: rgba(112, 112, 253, 0.76);
+}
+.homeheading{
+  color: black;
+  background-color: rgba(112, 112, 253, 0.76);
+}
+.Detail{
+  color: black;
+  background-color: rgba(112, 112, 253, 0.76);  
 }

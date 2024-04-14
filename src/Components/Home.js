@@ -1,30 +1,43 @@
 import React from "react";
 import { useState } from "react";
-import Features from "./Features";
 
 function Home(props) {
   const [val, setVal] = useState("");
-  const [val2, setVal2] = useState("");
+  const [val2, setVal2] = useState("")
   const [val3, setVal3] = useState("")
-  const [y, setY] = useState("f")
+  const [info, setInfo] = useState([])
+  // const [y, setY] = useState("f")
   // const [tem,setTem] =useState("")
   const CTS = () => {
-    if(val==""){
+    if(val===""){
       alert("Plese enter your name")
     }else{
       console.log(val+val2);
       alert("Your welcome!  " + val+" "+val2);
       setVal("")
-      setVal2("");
+      setVal2("")
       setVal3("")
     }
     
   }
-  const CC = ()=>{
-    console.log("cc")
-    setY("feature") 
-    console.log("cf")     
+
+  const addJSON=()=>{
+    const obj = info;
+    let object = { "NAME" : document.getElementById("fname").value +document.getElementById("lname").value, "EMAIL" : document.getElementById("uemail").value};
+    obj.push(object)
+    setInfo(obj)
+    console.log( info );
   }
+
+  const duo =()=>{
+    CTS()
+    addJSON()
+  }
+  // const CC = ()=>{
+  //   console.log("cc")
+  //   setY("feature") 
+  //   console.log("cf")     
+  // }
   const OC = (e) => {
     setVal(e.target.value);
   }
@@ -51,14 +64,17 @@ function Home(props) {
       <h6>NAME:</h6>
       <input
         type="text"
+        id="fname"
         aria-label="First name"
         placeholder={props.fplace}
         value={val}
         onChange={OC}
         className="form-control"
+        required
       />
       <input
         type="text"
+        id="lname"
         aria-label="Last name"
         placeholder={props.lplace}
         value={val2}
@@ -68,15 +84,18 @@ function Home(props) {
       <h6>EMAIL:</h6>
       <input
         type="email"
+        id="uemail"
         aria-label="email"
         placeholder={props.eplace}
         value={val3}
         onChange={OC3}
         className="form-control"
+        required
       />
       </div>
       <br />
-      <button onClick={CTS}>Click to Submit</button>
+      <button onClick={duo}>Click to Submit</button><br /><br />
+      {/* <button onClick={addJSON}>Submit data</button> */}
       {/* <button onClick={CC}>GO to advanced</button>
       {
         y==="feature" && <Features/>

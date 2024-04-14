@@ -67,6 +67,17 @@ function Resume() {
             </li>
             <li>Excellent problem-solving and troubleshooting abilities</li>
           </div>
+          <br />
+          <div className="Con" style={{ padding: "1rem", margin: "1px" }}>
+            <b>
+              <u>
+                <h4>Contact:</h4>
+              </u>
+            </b>
+            <li><b>Phone number:</b> {data.pno}</li>
+            <li><b>Email:</b> {data.email}</li>
+          </div>
+          <br />
         </ul>
       </div>
       

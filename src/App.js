@@ -16,7 +16,7 @@ function App() {
             <Home fplace="First" lplace="Last" eplace="Email"/>
           </Route>
           <Route exact path="/feature">
-            <Features place="Plese enter text to change it into upper case,lower case or reset box text"/>
+            <Features place="Plese enter text to change it into upper case,lower case OR reset box text"/>
           </Route>
           <Route exact path="/resume">
             <Resume/>

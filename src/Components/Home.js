@@ -6,7 +6,6 @@ function Home(props) {
   const [val2, setVal2] = useState("");
   const [val3, setVal3] = useState("");
   const [info, setInfo] = useState([]);
-  const [y, setY] = useState(true)
   // const [tem,setTem] =useState("")
   const CTS = () => {
     if (val === "") {
@@ -64,10 +63,6 @@ function Home(props) {
   //   CTS()
   //   feed()
   // }
-  const sho =()=>{
-    setY(true)
-    console.log("true value ",y)
-  }
 
   return (
     <>
@@ -108,10 +103,8 @@ function Home(props) {
       </div>
       <br />
       <button onClick={duo}>Click to Submit</button>
-      <br />
-      <br />Click on show button to view all entered details:
 {/* <button onClick={sho}>show</button> */}
-      <table
+      {/* <table
         style={{
           width: "70%",
           margin: "3px",
@@ -130,7 +123,7 @@ function Home(props) {
             </tr>
           );
         })}
-      </table>
+      </table> */}
       
       {/* <button onClick={addJSON}>Submit data</button> */}
       {/* <button onClick={CC}>GO to advanced</button>
